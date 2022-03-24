@@ -22,5 +22,29 @@
     <p>When creating a new project on your local machine using git, you'll first create a new repository (or often, 'repo', for short). </p>
     <p>To initialize a git repository in the root of the folder, run the git init command: </p>
     <img src="./images/Capture.PNG" alt="git init command">
+
+    <h2>Step2:Add a new file to the repo</h2>
+    <p>Go ahead and add a new file to the project, using any text editor you like or running a touch command. `touch newfile.txt` just creates and saves a blank file named newfile.txt. </p>
+    <p>Once you've added or modified files in a folder containing a git repo, git will notice that  the file exists inside the repo. But, git won't track the file unless you explicitly tell it to. Git only saves/manages changes to files that it tracks, so we’ll need to send a command to confirm that yes, we want git to track our new file.</p>
+    <img src="./images/Touch.PNG" alt="Create File">
+    <p>After creating the new file, you can use the git status command to see which files git knows exist.</p>
+    <img src="./images/status.PNG" alt="Status">
+    <p>What this basically says is, "Hey, we noticed you created a new file called readme.txt, but unless you use the 'git add' command we aren't going to do anything with it.</p>
+
+    <h3>An interlude: The staging environment, the commit, and you</h3>
+    <p>One of the most confusing parts when you're first learning git is the concept of the staging environment and how it relates to a commit.</p>
+    <p>A commit is a record of what changes you have made since the last time you made a commit. Essentially, you make changes to your repo (for example, adding a file or modifying one) and then tell git to put those changes into a commit.</p>
+    <p>Commits make up the essence of your project and allow you to jump to the state of a project at any other commit.</p>
+    <p>So, how do you tell git which files to put into a commit? This is where the staging environment or index come in. As seen in Step 2, when you make changes to your repo, git notices that a file has changed but won't do anything with it (like adding it in a commit).</p>
+    <p>To add a file to a commit, you first need to add it to the staging environment. To do this, you can use the git add <filename> command (see Step 3 below).</p>
+    <img src="./images/lifecycle.png" alt="">
+    <p>Once you've used the git add command to add all the files you want to the staging environment, you can then tell git to package them into a commit using the git commit command. </p>
+    <p>Note: The staging environment, also called 'staging', is the new preferred term for this, but you can also see it referred to as the 'index'.</p>
+
+
+
+
+
+
 </body>
 </html>

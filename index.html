@@ -41,12 +41,18 @@
     <p>Once you've used the git add command to add all the files you want to the staging environment, you can then tell git to package them into a commit using the git commit command. </p>
     <p>Note: The staging environment, also called 'staging', is the new preferred term for this, but you can also see it referred to as the 'index'.</p>
 
-     <h2>Add a file to the staging enviroment</h2>
+     <h2>Step 3:Add a file to the staging enviroment</h2>
      <p>Add a file to the staging environment using the git add command.</p>
      <p>If you rerun the git status command, you'll see that git has added the file to the staging environment (notice the "Changes to be committed" line). </p>
      <img src="./images/Add.PNG" alt="ADD">
      <p>To reiterate, the file has not yet been added to a commit, but it's about to be.</p>
 
+     <h2>Step 4:Create a commit</h2>
+     <p>It's time to create your first commit!</p>
+     <p>Run the command git commit -m "Your message about the commit"</p>
+     <img src="./images/Commit.PNG" alt="Commit">
+     <p>The message at the end of the commit should be something related to what the commit contains - maybe it's a new feature, maybe it's a bug fix, maybe it's just fixing a typo. Don't put a message like "asdfadsf" or "foobar". That makes the other people who see your commit sad. Very, very, sad. Commits live forever in a repository (technically you can delete them if you really, really need to but it’s messy), so if you leave a clear explanation of your changes it can be extremely helpful for future programmers (perhaps future you!) who are trying to figure out why some change was made years later.</p>
+     
 
 
 
